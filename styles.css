@@ -1,0 +1,156 @@
+/* the css reset starts here*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
+}
+/* the css reset ends here */
+
+html {
+  font-size: 30%;
+  box-sizing: border-box;
+}
+
+/* Layout styles */
+.background {
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container,
+.container-2 {
+  background-color: hsl(213, 19%, 18%);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.star-container,
+.number {
+  background-color: hsl(216, 12%, 24%);
+  height: 35px;
+  width: 35px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.number:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.number:active {
+  background-color: hsl(217, 12%, 63%);
+}
+
+.container-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(216, 12%, 24%);
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* .hidden-1 {
+  display: grid;
+} */
+
+/* image style */
+.star {
+  width: 15px;
+}
+
+/* Text styles */
+h1,
+h2 {
+  font-size: 4rem;
+  color: hsl(0, 0%, 100%);
+  padding-bottom: 20px;
+  font-weight: 700;
+}
+
+h2 {
+  padding-top: 20px;
+}
+
+p {
+  font-size: 2.5rem;
+  color: hsl(217, 12%, 63%);
+  padding-bottom: 20px;
+  line-height: 4.5rem;
+  max-width: 270px;
+  font-weight: 400;
+}
+
+.container-2 p {
+  text-align: center;
+}
+
+.number {
+  color: hsl(217, 12%, 63%);
+  font-size: 2.5rem;
+}
+
+/* Button style */
+.submit-button {
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  width: 100%;
+  padding: 5px;
+  border-radius: 20px;
+
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.submit-button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+/* System style */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media Query for desktop view */
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 35%;
+    box-sizing: border-box;
+  }
+}
