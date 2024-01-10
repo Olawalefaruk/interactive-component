@@ -52,6 +52,13 @@ html {
   background-color: hsl(217, 12%, 63%);
 }
 
+/* to make the selected button remain active after altering the cursor */
+.active {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
 .container-2 {
   display: flex;
   flex-direction: column;
